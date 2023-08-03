@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>freeCodeCamp Survey Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label id="email-label">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label id="number-label">Number: </label>
+            <input type="number" id="number" name="number" placeholder="Enter your number" min="1" max="10">
+            <label id="select-label">select:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <fieldset id="name">
+                <legend>Select one radio</legend>
+                <label><input type="radio" id="radio1" name="radio" value="1" checked>Radio One</label>
+                <label><input type="radio" id="radio2" name="radio" value="2">Radio Two</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select one or more checkbox</legend>
+                <label><input type="checkbox" value="1" id="checkbox1">Chechbox One</label>
+                <label><input type="checkbox" value="2" id="checkbox2">Chechbox Two</label>
+                <label><input type="checkbox" value="3" id="checkbox3">Chechbox Three</label>
+            </fieldset>
+            <textarea id="textarea" rows="3" cols="30"></textarea>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </body>
+</html>
